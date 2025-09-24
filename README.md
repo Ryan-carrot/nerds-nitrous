@@ -8,7 +8,7 @@ The site is currently a static preview built using HTML and CSS, with no backend
 
 ## 🌐 Live Preview
 
-👉 [Visit the Website](https://ryan-carrot.github.io/nerds-nitrous.github.io/)
+👉 [Visit the Website](https://ryan-carrot.github.io/nerds-nitrous/)
 
 ## 🛠️ Tech Stack
 
