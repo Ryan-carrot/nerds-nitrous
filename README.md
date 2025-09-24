@@ -23,3 +23,9 @@ You can clone or download this repository if you'd like to:
 ```bash
 git clone https://github.com/ryan-carrot/nerds-nitrous.github.io.git
 ```
+
+Then simply open index.html in a browser to view the site locally.
+
+## 🚧 Status
+
+The site is a work-in-progress and currently serves as a visual preview. More features and content may be added in the future.
