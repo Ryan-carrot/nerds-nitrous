@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: built_titling_lt_it
+font link: https://www.fontspring.com/fonts/typodermic/built-titling
+font author: Typodermic
+font author site: http://typodermicfonts.com/
+Slogan Font: Aleo-Light.otf
+
+icon designer: Icons By Alfredo
+icon designer link: /creator/AlfredoCreates/
+        
+
+fontColor: {"hex":"#EB4C00"}
+bgColor: {"hex":"#FFFFFF"}
+iconColor: {"hex":"#EB4C00"}
+sloganColor: {"hex":"#361C00"}
+      
