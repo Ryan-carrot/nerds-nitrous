@@ -52,7 +52,6 @@ body {
     border-radius: 0.938rem;
 }
 
-
 .desktop-nav li:hover {
     transform: scale(1.1);
     transition: 0.3s;
@@ -231,7 +230,7 @@ button {
 }
 
 .events ul {
-    width: 30%;
+  
     padding: 0;
     border: 1px solid black;
     border-radius: var(--border-radius);
@@ -333,5 +332,94 @@ footer a {
     .gallery img {
         width: 45%;
         height: 30vh;
+    }
+}
+
+/*Mobile Styles*/
+/*Hide .mobile-nav when over 777px*/
+@media only screen and (min-width: 777px) {
+    .mobile-nav {
+        display: none;
+    } 
+}
+
+/*Hide all navs except .mobile-nav when under 776px*/
+@media only screen and (max-width: 776px) {
+    .tablet-nav, .desktop-nav, #desktop-logo {
+        display: none;
+    }
+
+    .mobile-nav {
+        overflow: hidden;
+        z-index: 5;
+        background-color: var(--primary-white);
+        position: static;
+        width: 100%;
+    }
+
+    .mobile-nav img {
+        width: 50%;
+    }
+
+    .mobile-nav #nav-links {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+    }
+
+    .mobile-nav #nav-links.show {
+        max-height: 600px; /* adjust as needed */
+        opacity: 1;
+    }
+
+    .mobile-nav a {
+        color: var(--primary-black);
+        padding: 0.875rem 1rem;
+        text-decoration: none;
+        font-size: 1.063rem;
+        display: block;
+    }
+
+    .mobile-nav a.icon {
+        background: var(--primary-white);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .mobile-nav a:hover {
+        background-color: #ddd;
+        color: var(--primary-black);
+    }
+  
+    .active {
+        background-color: var(--primary-white);
+        color: var(--primary-black);
+    }
+
+    a.icon {
+        margin: 0.3rem;
+    }
+}
+
+/*Stack Partnerships & Passions under 500px*/
+@media only screen and (max-width: 500px) {
+    .collaboration {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .gallery img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/*Adjust hamburger margin for very small screens*/
+@media only screen and (max-width: 376px) {
+    a.icon {
+        margin: 0;
     }
 }
