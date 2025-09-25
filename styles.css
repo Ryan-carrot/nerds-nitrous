@@ -7,6 +7,16 @@ body {
     margin: 0;
 }
 
+:root {
+    --primary-brand-color: #420F14;
+    --secondary-brand-color: #e4e4e4b9;
+    --accent-brand-color: #C5545E;
+    --primary-black: #0f0f0f;
+    --primary-white: #ffffff;
+    --primary-padding: 2rem;
+    --border-radius: 0.625rem;
+}
+
 /* Header + Nav Styles */
 .header-container {
     display: inline-flex;
@@ -37,9 +47,9 @@ body {
 
 .desktop-nav li {
     margin: 0 0.938rem;
-    padding: 5px;
+    padding: 0.313rem;
     border: 1.5px solid black;
-    border-radius: 15px;
+    border-radius: 0.938rem;
 }
 
 
@@ -50,7 +60,7 @@ body {
 
 .desktop-nav a {
     text-decoration: none;
-    color: black;
+    color: var(--primary-black);
     font-weight: 500;
 }
 
@@ -72,8 +82,8 @@ body {
     font-size: 5rem;
     text-transform: uppercase;
     width: 100%;
-    color: white;
-    background-color: #420F14;
+    color: var(--primary-white);
+    background-color: var(--primary-brand-color);
     opacity: 0.7;
     text-align: center;
 }
@@ -83,7 +93,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 2rem;
+    padding: var(--primary-padding);
 }
 
 .intro-mission h2 {
@@ -95,8 +105,8 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 2rem;
-    background-color: #e4e4e4b9;
+    padding: var(--primary-padding);
+    background-color: var(--secondary-brand-color);
 }
 
 /*Form*/
@@ -104,14 +114,14 @@ input[type="email"] {
     padding: 0.5rem;
     font-size: 1rem;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     margin-top: 1rem;
     width: 20rem;
     max-width: 90%;
 }
 
 form {
-    margin-bottom: 18.72px;
+    margin-bottom: 1.17rem;
 }
 
 label {
@@ -123,9 +133,9 @@ button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     border: none;
-    border-radius: 10px;
-    background-color: #420F14;
-    color: white;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-brand-color);
+    color: var(--primary-white);
     margin-top: 1rem;
     cursor: pointer;
 }
@@ -143,18 +153,18 @@ button {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 2rem;
+    padding: var(--primary-padding);
 }
 .gallery img {
     width: 30%;
     height: 50vh;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
 }
 
 /*Testimonials*/
 .testimonials {
-    background-color: #f4f4f4;
-    padding: 2rem;
+    background-color: var(--secondary-brand-color);
+    padding: var(--primary-padding);
     text-align: center;
 }
 
@@ -173,7 +183,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    padding: 2rem;
+    padding: var(--primary-padding);
     gap: 5rem;
 }
 
@@ -199,7 +209,7 @@ button {
 
 /*Events*/
 .events {
-    padding: 2rem;
+    padding: var(--primary-padding);
 }
 
 .events h2 {
@@ -224,8 +234,8 @@ button {
     width: 30%;
     padding: 0;
     border: 1px solid black;
-    border-radius: 10px;
-    background-color: #f4f4f4;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-brand-color);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -243,15 +253,15 @@ button {
 
 /*Footer*/
 footer {
-    background-color: #420F14;
-    color: white;
+    background-color: var(--primary-brand-color);
+    color: var(--primary-white);
     text-align: center;
     padding: 1rem;
     font-size: 0.875rem;
 }
 
 footer a {
-    color: white;
+    color: var(--primary-white);
     text-decoration: none;
     font-weight: 500;
 }
