@@ -4,7 +4,7 @@ Welcome to Nerds & Nitrous – Douglas County's hybrid club for horsepower freak
 
 This is the official website for the **Nerds & Nitrous** club — a group of enthusiasts passionate about technology, science, and high-performance machines.
 
-The site is currently a static preview built using HTML and CSS, with no backend or dynamic functionality.
+The site is currently a static preview built using HTML, CSS, JavaScript and jQuery with no backend or dynamic functionality.
 
 ## 🌐 Live Preview
 
@@ -14,6 +14,8 @@ The site is currently a static preview built using HTML and CSS, with no backend
 
 - HTML5
 - CSS3
+- Vanilla JS
+- jQuery
 - Hosted on GitHub Pages
 
 ## 📁 Usage
