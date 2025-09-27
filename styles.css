@@ -192,6 +192,11 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: var(--accent-brand-color);
+    transition: 0.3s;
+}
+
 /*Gallery*/
 .gallery h2 {
     text-align: center;
