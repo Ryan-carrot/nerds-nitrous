@@ -17,6 +17,57 @@ body {
     --border-radius: 0.625rem;
 }
 
+/*Animations*/
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
 /* Header + Nav Styles */
 .header-container {
     display: inline-flex;
@@ -85,6 +136,8 @@ body {
     background-color: var(--primary-brand-color);
     opacity: 0.7;
     text-align: center;
+    -webkit-animation: slide-in-left 1s both;
+	animation: slide-in-left 1s both;
 }
 
 /*intro*/
@@ -158,6 +211,11 @@ button {
     width: 30%;
     height: 50vh;
     border-radius: var(--border-radius);
+}
+
+.slide-in-fwd-center {
+    -webkit-animation: slide-in-fwd-center 1s ease-in-out both;
+	animation: slide-in-fwd-center 1s ease-in-out both;
 }
 
 /*Testimonials*/
