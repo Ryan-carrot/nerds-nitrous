@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="icon" href="./Resources/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,opsz@0,18..144;1,18..144&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>Contact | Nerds & Nitrous</title>
+</head>
+
+    <!--Body-->
+    <body>
+        <!--Header-->
+        <header class="header-container">
+            <a id="desktop-logo" href="index.html"><img src="./Resources/default-cropped(1).PNG" alt="Nerds & Nitrous Logo"></a>
+            <!--Desktop Nav-->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!--Tablet Nav-->
+            <nav class="tablet-nav">
+                <ul>
+                    <li><a href="#events"><img src="./Resources/calendar.png" alt="Events"></a></li>
+                    <li><a href="#partners"><img src="./Resources/handshake.png" alt="Partners"></a></li>
+                    <li><a href="#about"><img src="./Resources/personal-card.png" alt="About"></a></li>
+                    <li><a href="#contact"><img src="./Resources/contact-mail.png" alt="Contact"></a></li>
+                </ul>
+            </nav>
+            <!--Mobile Nav: Under 776px-->
+            <div class="mobile-nav">
+                <a href="#home" class="active"><img src="./Resources/profile(1)-cropped.png" alt="Nerds & Nitrous Logo Mobile"></a>
+                <div id="nav-links">
+                    <a href="#events">Events</a>
+                    <a href="#partners">Partners</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <!--"Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+
+        <!--Main Content-->
+        <main>
+            <div class="contact-grid">
+                <section class="contact-section">
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions, suggestions, or would like to get in touch with us, please fill out the form below:</p>
+                    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </section>
+                <section class="location-section">
+                    <h2>Our Location</h2>
+                    <p>We are located in Douglas County. Feel free to visit us during our events or reach out via the contact form above.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46507.7136557569!2d-123.37762064793066!3d43.236076139717305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c422c54b5959cd%3A0x5fa45e16d7c2fd91!2sRoseburg%2C%20OR!5e0!3m2!1sen!2sus!4v1759010998288!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </div>
+            <section class="contact-info">
+                    <h2>Other Ways to Reach Us</h2>
+                    <p>Email: <a href="mailto:info@nerdsandnitrous.com">info@nerdsandnitrous.com</a></p>
+                    <p>Phone: (541) 860-5555</p>
+                    <p>Follow us on social media for the latest updates!</p>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="social-media">
+                <ul>
+                    <li><a href="#facebook" target="_blank" rel="noopener"><img src="./Resources/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#instagram" target="_blank" rel="noopener"><img src="./Resources/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#discord" target="_blank" rel="noopener"><img src="./Resources/discord.png" alt="Discord"></a></li>
+                    <li><a href="#x" target="_blank" rel="noopener"><img src="./Resources/twitter.png" alt="X"></a></li>
+                </ul>
+            <p>&copy; 2025 Nerds & Nitrous</p>
+        </footer>
+    </body>
+</html>
