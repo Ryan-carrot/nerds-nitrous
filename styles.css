@@ -116,7 +116,7 @@ body {
 
 /*Main Content Styles*/
 .hero {
-    display: flex;;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-image: url('./Resources/front-side-cropped.PNG');
