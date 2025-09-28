@@ -69,8 +69,15 @@ body {
 }
 
 /* Header + Nav Styles */
-.header-container {
+.tablet-nav {
+    display: none;
+}
+
+.header-container, .desktop-nav, .desktop-nav ul {
     display: inline-flex;
+}
+
+.header-container {
     width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -82,16 +89,7 @@ body {
     width: auto;
 }
 
-.tablet-nav {
-    display: none;
-}
-
-.desktop-nav {
-    display: inline-flex;
-}
-
 .desktop-nav ul {
-    display: inline-flex;
     list-style: none;
     font-size: 1.37rem;
 }
@@ -141,7 +139,7 @@ body {
 }
 
 /*intro*/
-.intro-mission {
+.intro-mission, .newsletter-signup {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -154,10 +152,6 @@ body {
 }
 
 .newsletter-signup {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: var(--primary-padding);
     background-color: var(--secondary-brand-color);
 }
 
