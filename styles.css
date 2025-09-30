@@ -332,7 +332,7 @@ button:hover {
     list-style: none;
 }
 
-/*contact page*/
+/*Contact Page*/
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -356,6 +356,82 @@ button:hover {
 .contact-info {
     text-align: center;
     margin-bottom: 2rem;
+}
+
+/*Events Page*/
+.event-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.event-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-description {
+    text-align: center;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    color: var(--primary-black);
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.event-card {
+    display: flex;
+    gap: 1rem;
+    background: var(--secondary-brand-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.event-card:hover {
+    background: var(--accent-brand-color);
+    color: var(--primary-white);
+    transform: scale(1.02);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.event-date {
+    background: var(--accent-brand-color);
+    color: var(--primary-white);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    min-width: 70px;
+}
+
+.event-date .event-day {
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: block;
+}
+
+.event-date .event-month {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    display: block;
+}
+
+.event-info h2 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.25rem;
+    color: var(--primary-brand-color);
+}
+
+.event-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--primary-black);
 }
 
 /*Footer*/
