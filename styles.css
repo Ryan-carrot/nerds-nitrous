@@ -155,13 +155,16 @@ body {
     background-color: var(--secondary-brand-color);
 }
 
-/*NewsletterForm*/
+/*Newsletter Form*/
+.newsletter-form input, button {
+    font-size: 1rem;
+    margin-top: 1rem;
+    border-radius: var(--border-radius);
+}
+
 .newsletter-form input {
     padding: 0.5rem;
-    font-size: 1rem;
     border: 1px solid black;
-    border-radius: var(--border-radius);
-    margin-top: 1rem;
     width: 20rem;
     max-width: 90%;
 }
@@ -177,12 +180,9 @@ label {
 
 button {
     padding: 0.5rem 1rem;
-    font-size: 1rem;
     border: none;
-    border-radius: var(--border-radius);
     background-color: var(--primary-brand-color);
     color: var(--primary-white);
-    margin-top: 1rem;
     cursor: pointer;
 }
 
@@ -204,8 +204,7 @@ button:hover {
     margin-bottom: 0.5rem;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
     padding: 0.5rem;
     border: 1px solid var(--primary-black);
     border-radius: var(--border-radius);
@@ -296,15 +295,13 @@ button:hover {
 
 .events h2 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.events h3 {
-    margin-bottom: 1rem;
-    text-align: center;
 }
  
+.events h2, .events h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 .list-container {
     display: flex;
     justify-content: space-around;
@@ -359,23 +356,50 @@ button:hover {
 }
 
 /*Events Page*/
-.event-container {
+.featured-section, .event-card:hover, .event-date {
+    background: var(--accent-brand-color);
+    color: var(--primary-white);
+}
+
+.featured-section, .event-heading, .past-events, .event-description, .event-date {
+    text-align: center;
+}
+
+.event-description, .event-info p, .past .event-info h3 {
+    color: var(--primary-black);
+}
+
+.featured-section {
+    border-radius: 0.75rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    -webkit-animation: slide-in-left 1s both;
+	animation: slide-in-left 1s both;
+}
+
+.featured-event h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.75rem;
+}
+
+.featured-event p {
+    margin: 0.25rem 0;
+}
+
+.event-container, .past-event-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
 
-.event-heading {
-    text-align: center;
+.event-heading, .past-events {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
 
 .event-description {
-    text-align: center;
     font-size: 1.125rem;
     margin-bottom: 2rem;
-    color: var(--primary-black);
 }
 
 .event-list {
@@ -394,19 +418,14 @@ button:hover {
 }
 
 .event-card:hover {
-    background: var(--accent-brand-color);
-    color: var(--primary-white);
     transform: scale(1.02);
     transition: 0.3s;
     cursor: pointer;
 }
 
 .event-date {
-    background: var(--accent-brand-color);
-    color: var(--primary-white);
     border-radius: 0.5rem;
     padding: 0.5rem 0.75rem;
-    text-align: center;
     min-width: 70px;
 }
 
@@ -431,7 +450,14 @@ button:hover {
 .event-info p {
     margin: 0;
     font-size: 0.9rem;
-    color: var(--primary-black);
+}
+
+.past .event-card {
+    opacity: 0.75;
+}
+
+.past .event-info h2 {
+    text-decoration: line-through;
 }
 
 /*Footer*/
