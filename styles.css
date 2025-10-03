@@ -460,6 +460,67 @@ button:hover {
     text-decoration: line-through;
 }
 
+/*About Page*/
+
+.about-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./Resources/back-cropped.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    filter: brightness(0.5);
+}
+
+.about-title {
+    padding: 1rem 2rem;
+    margin: 0;
+    font-size: 4rem;
+    text-transform: uppercase;
+    width: 100%;
+    color: var(--primary-white);
+    background-color: var(--primary-brand-color);
+    opacity: 0.9;
+    text-align: center;
+    -webkit-animation: slide-in-left 1s both;
+    animation: slide-in-left 1s both;
+}
+
+.about-section p {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--primary-black);
+}
+
+.values-mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background-color: var(--secondary-brand-color);
+}
+
+.values-mission h2, .founder-contact h2, .mission-vision h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.mission-vision, .community-values {
+    padding: var(--primary-padding);
+}
+
+.get-in-touch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--primary-padding);
+    text-align: center;
+}
+
 /*Footer*/
 footer {
     background-color: var(--primary-brand-color);
