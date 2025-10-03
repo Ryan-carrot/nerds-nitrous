@@ -4,36 +4,41 @@ function myFunction() {
   x.classList.toggle("show");
 }
 
-// jQuery to check scroll position to trigger fade in animation for gallery
-document.addEventListener("DOMContentLoaded", function(event) {
-    document.addEventListener("scroll", function(event) {
-        const galleryGrids = document.getElementsByClassName("gallery-grid");
-        const windowOffsetTop = window.innerHeight + window.scrollY;
+// Trigger gallery and mission animations on scroll
+// Unified scroll/visibility handler for multiple targets
+document.addEventListener("DOMContentLoaded", function () {
+  const targets = [
+    { selector: ".gallery-grid", className: "slide-in-fwd-center" },
+    { selector: ".values-mission", className: "slide-in-right" },
+  ];
 
-        Array.prototype.forEach.call(galleryGrids, (galleryGrid) => {
-            const galleryGridOffsetTop = galleryGrid.offsetTop;
+  // Adjust this offset to trigger earlier/later (px from bottom)
+  const triggerOffset = 50;
 
-            if (windowOffsetTop >= galleryGridOffsetTop) {
-                addClass(galleryGrid, "slide-in-fwd-center");
-            }
-        });
+  function checkVisibility() {
+    const vh = window.innerHeight;
+
+    targets.forEach((t) => {
+      const nodes = document.querySelectorAll(t.selector);
+      nodes.forEach((el) => {
+        // skip if already animated
+        if (el.dataset.animated === "true") return;
+
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= vh - triggerOffset) {
+          addClass(el, t.className);
+          el.dataset.animated = "true";
+        }
+      });
     });
-});
+  }
 
-// jQuery to check scroll position to trigger slide in animation for mission & values
-document.addEventListener("DOMContentLoaded", function(event) {
-    document.addEventListener("scroll", function(event) {
-        const missionGrids = document.getElementsByClassName("values-mission");
-        const windowOffsetTop = window.innerHeight + window.scrollY;
+  // run on load in case elements are already visible
+  checkVisibility();
 
-        Array.prototype.forEach.call(missionGrids, (missionGrid) => {
-            const missionGridOffsetTop = missionGrid.offsetTop;
-
-            if (windowOffsetTop >= missionGridOffsetTop) {
-                addClass(missionGrid, "slide-in-right");
-            }
-        });
-    });
+  // run on scroll and resize
+  window.addEventListener("scroll", checkVisibility, { passive: true });
+  window.addEventListener("resize", checkVisibility);
 });
 
 function addClass(element, className) {
