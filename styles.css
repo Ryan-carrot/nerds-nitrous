@@ -110,7 +110,7 @@ body {
 
 #desktop-logo img {
     margin: 1.25rem;
-    height: 5rem;
+    height: 6rem;
     width: auto;
 }
 
@@ -699,7 +699,7 @@ footer a {
     }
 
     .mobile-nav img {
-        width: 50%;
+        width: 45%;
     }
 
     .mobile-nav #nav-links {
