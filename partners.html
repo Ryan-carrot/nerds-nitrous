@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="icon" href="./Resources/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,opsz@0,18..144;1,18..144&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>Partners | Nerds & Nitrous</title>
+</head>
+    <body>
+        <!--Header-->
+        <header class="header-container">
+            <a id="desktop-logo" href="./index.html"><img src="./Resources/nerds-and-nitrous-logo-cropped-final.PNG" alt="Nerds & Nitrous Logo"></a>
+            <!--Desktop Nav-->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="./events.html">Events</a></li>
+                    <li><a href="./partners.html">Partners</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!--Tablet Nav-->
+            <nav class="tablet-nav">
+                <ul>
+                    <li><a href="./events.html"><img src="./Resources/calendar.png" alt="Events"></a></li>
+                    <li><a href="./partners.html"><img src="./Resources/handshake.png" alt="Partners"></a></li>
+                    <li><a href="./about.html"><img src="./Resources/personal-card.png" alt="About"></a></li>
+                    <li><a href="./contact.html"><img src="./Resources/contact-mail.png" alt="Contact"></a></li>
+                </ul>
+            </nav>
+            <!--Mobile Nav: Under 776px-->
+            <div class="mobile-nav">
+                <a href="./index.html" class="active"><img src="./Resources/nerds-and-nitrous-mobile-logo-cropped-final.png" alt="Nerds & Nitrous Logo Mobile"></a>
+                <div id="nav-links">
+                    <a href="./events.html">Events</a>
+                    <a href="./partners.html">Partners</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+                <!--"Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <!-- HERO -->
+            <header class="partners-hero" role="region" aria-labelledby="partners-title">
+                <div class="left">
+                <h1 id="partners-title">Our Partners</h1>
+                <p>We collaborate with local businesses and communities to bring events, tech help, and fun to car and gaming enthusiasts across Oregon.</p>
+                <div class="cta">
+                    <a class="btn" href="/contact">Become a Partner</a>
+                </div>
+                </div>
+                <div class="right">
+                <strong class="featured">Featured</strong>
+                <p class="featured-desc">Check out our upcoming collaboration with Roseburg Cars & Coffee — monthly meetups and tech talks.</p>
+                </div>
+            </header>
+
+            <!-- PARTNERS GRID -->
+            <section aria-labelledby="grid-head">
+                <div class="section-title">
+                <h2 id="grid-head">Trusted Partners</h2>
+                <p class="section-sub muted">Local businesses and organizations we work with regularly.</p>
+                </div>
+
+                <div class="grid" role="list">
+
+                <article class="card" role="listitem" aria-labelledby="p-oregon">
+                    <a href="https://www.facebook.com/groups/oregonconnectedtuners" class="logo-wrap" target="_blank" rel="noopener">
+                    <img class="logo" src="https://via.placeholder.com/240x64.png?text=Oregon+Connected+Tuners" alt="Oregon Connected Tuners logo">
+                    </a>
+                    <div>
+                    <div id="p-oregon" class="partner-name">Oregon Connected Tuners</div>
+                    <div class="partner-desc">Community of performance tuners and event partners for track/tune meetups.</div>
+                    <div class="partner-actions">
+                        <a class="link" href="https://www.facebook.com/groups/oregonconnectedtuners" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                    </div>
+                </article>
+
+                <article class="card" role="listitem" aria-labelledby="p-roseburg">
+                    <a href="https://www.facebook.com/roseburgcarsandcoffee" class="logo-wrap" target="_blank" rel="noopener">
+                    <img class="logo" src="https://via.placeholder.com/240x64.png?text=Roseburg+Cars+%26+Coffee" alt="Roseburg Cars & Coffee logo">
+                    </a>
+                    <div>
+                    <div id="p-roseburg" class="partner-name">Roseburg Cars & Coffee</div>
+                    <div class="partner-desc">Local car community meetups — casual morning shows and charity events.</div>
+                    <div class="partner-actions">
+                        <a class="link" href="https://www.facebook.com/roseburgcarsandcoffee" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                    </div>
+                </article>
+
+                <article class="card" role="listitem" aria-labelledby="p-bl">
+                    <a href="https://blperformanceinc.com" class="logo-wrap" target="_blank" rel="noopener">
+                    <img class="logo" src="https://via.placeholder.com/240x64.png?text=BL+Performance" alt="BL Performance logo">
+                    </a>
+                    <div>
+                    <div id="p-bl" class="partner-name">BL Performance</div>
+                    <div class="partner-desc">Performance shop that provides vehicle support for our track days and tech sessions.</div>
+                    <div class="partner-actions">
+                        <a class="link" href="https://blperformanceinc.com" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                    </div>
+                </article>
+
+                <article class="card" role="listitem" aria-labelledby="p-ttk">
+                    <a href="https://www.facebook.com/tabletopkingdom" class="logo-wrap" target="_blank" rel="noopener">
+                    <img class="logo" src="https://via.placeholder.com/240x64.png?text=Tabletop+Kingdom" alt="Tabletop Kingdom logo">
+                    </a>
+                    <div>
+                    <div id="p-ttk" class="partner-name">Tabletop Kingdom</div>
+                    <div class="partner-desc">Local game store — we co-host tabletop and gaming nights at events.</div>
+                    <div class="partner-actions">
+                        <a class="link" href="https://www.facebook.com/tabletopkingdom" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                    </div>
+                </article>
+
+                <article class="card" role="listitem" aria-labelledby="p-hpd">
+                    <a href="https://hpd-computers.ueniweb.com" class="logo-wrap" target="_blank" rel="noopener">
+                    <img class="logo" src="https://via.placeholder.com/240x64.png?text=HPD+Computer+Repair" alt="HPD Computer Repair logo">
+                    </a>
+                    <div>
+                    <div id="p-hpd" class="partner-name">HPD Computer Repair</div>
+                    <div class="partner-desc">Local IT & repair support — great for hardware advice and on-site troubleshooting.</div>
+                    <div class="partner-actions">
+                        <a class="link" href="https://hpd-computers.ueniweb.com" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                    </div>
+                </article>
+                </div>
+            </section>
+
+        <!-- CTA -->
+            <section class="cta-panel" aria-labelledby="part-cta">
+                <div>
+                <h3 id="part-cta">Want to Partner with Us?</h3>
+                <p>We work with local shops, clubs, and creators to run events and cross-promotions. Let's collaborate.</p>
+                </div>
+                <div>
+                <a class="btn" href="/contact">Get in Touch</a>
+                </div>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="./events.html">Events</a></li>
+                    <li><a href="./partners.html">Partners</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="social-media">
+                <ul>
+                    <li><a href="#facebook" target="_blank" rel="noopener"><img src="./Resources/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#instagram" target="_blank" rel="noopener"><img src="./Resources/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#discord" target="_blank" rel="noopener"><img src="./Resources/discord.png" alt="Discord"></a></li>
+                    <li><a href="#x" target="_blank" rel="noopener"><img src="./Resources/twitter.png" alt="X"></a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2025 Nerds & Nitrous</p>
+        </footer>
+    </body>
+</html>
