@@ -52,106 +52,96 @@
         </header>
 
         <main>
-            <!-- HERO -->
-            <header class="partners-hero" role="region" aria-labelledby="partners-title">
+            <!--Hero-->
+            <header class="partners-hero">
                 <div class="left">
-                <h1 id="partners-title">Our Partners</h1>
-                <p>We collaborate with local businesses and communities to bring events, tech help, and fun to car and gaming enthusiasts across Oregon.</p>
-                <div class="cta">
-                    <a class="btn" href="/contact">Become a Partner</a>
-                </div>
+                    <h1 id="partners-title">Our Partners</h1>
+                    <p>We collaborate with local businesses and communities to bring events, tech help, and fun to car and gaming enthusiasts across Oregon.</p>
+                    <button type="button" onclick="location.href='/contact'">Become a Partner</button>
                 </div>
                 <div class="right">
-                <strong class="featured">Featured</strong>
-                <p class="featured-desc">Check out our upcoming collaboration with Roseburg Cars & Coffee — monthly meetups and tech talks.</p>
+                    <strong class="featured">Featured</strong>
+                    <p class="featured-desc">Check out our upcoming collaboration with Roseburg Cars & Coffee — monthly meetups and tech talks.</p>
                 </div>
             </header>
 
-            <!-- PARTNERS GRID -->
-            <section aria-labelledby="grid-head">
+            <!--Partners Grid-->
+            <section class="grid-head">
                 <div class="section-title">
-                <h2 id="grid-head">Trusted Partners</h2>
-                <p class="section-sub muted">Local businesses and organizations we work with regularly.</p>
+                    <h2 id="grid-head">Trusted Partners</h2>
+                    <p class="section-sub">Local businesses and organizations we work with regularly.</p>
                 </div>
-
-                <div class="grid" role="list">
-
-                <article class="card" role="listitem" aria-labelledby="p-oregon">
-                    <a href="https://www.facebook.com/groups/oregonconnectedtuners" class="logo-wrap" target="_blank" rel="noopener">
-                    <img class="logo" src="https://via.placeholder.com/240x64.png?text=Oregon+Connected+Tuners" alt="Oregon Connected Tuners logo">
-                    </a>
-                    <div>
-                    <div id="p-oregon" class="partner-name">Oregon Connected Tuners</div>
-                    <div class="partner-desc">Community of performance tuners and event partners for track/tune meetups.</div>
-                    <div class="partner-actions">
-                        <a class="link" href="https://www.facebook.com/groups/oregonconnectedtuners" target="_blank" rel="noopener">Visit</a>
-                    </div>
-                    </div>
-                </article>
-
-                <article class="card" role="listitem" aria-labelledby="p-roseburg">
-                    <a href="https://www.facebook.com/roseburgcarsandcoffee" class="logo-wrap" target="_blank" rel="noopener">
-                    <img class="logo" src="https://via.placeholder.com/240x64.png?text=Roseburg+Cars+%26+Coffee" alt="Roseburg Cars & Coffee logo">
-                    </a>
-                    <div>
-                    <div id="p-roseburg" class="partner-name">Roseburg Cars & Coffee</div>
-                    <div class="partner-desc">Local car community meetups — casual morning shows and charity events.</div>
-                    <div class="partner-actions">
-                        <a class="link" href="https://www.facebook.com/roseburgcarsandcoffee" target="_blank" rel="noopener">Visit</a>
-                    </div>
-                    </div>
-                </article>
-
-                <article class="card" role="listitem" aria-labelledby="p-bl">
-                    <a href="https://blperformanceinc.com" class="logo-wrap" target="_blank" rel="noopener">
-                    <img class="logo" src="https://via.placeholder.com/240x64.png?text=BL+Performance" alt="BL Performance logo">
-                    </a>
-                    <div>
-                    <div id="p-bl" class="partner-name">BL Performance</div>
-                    <div class="partner-desc">Performance shop that provides vehicle support for our track days and tech sessions.</div>
-                    <div class="partner-actions">
-                        <a class="link" href="https://blperformanceinc.com" target="_blank" rel="noopener">Visit</a>
-                    </div>
-                    </div>
-                </article>
-
-                <article class="card" role="listitem" aria-labelledby="p-ttk">
-                    <a href="https://www.facebook.com/tabletopkingdom" class="logo-wrap" target="_blank" rel="noopener">
-                    <img class="logo" src="https://via.placeholder.com/240x64.png?text=Tabletop+Kingdom" alt="Tabletop Kingdom logo">
-                    </a>
-                    <div>
-                    <div id="p-ttk" class="partner-name">Tabletop Kingdom</div>
-                    <div class="partner-desc">Local game store — we co-host tabletop and gaming nights at events.</div>
-                    <div class="partner-actions">
-                        <a class="link" href="https://www.facebook.com/tabletopkingdom" target="_blank" rel="noopener">Visit</a>
-                    </div>
-                    </div>
-                </article>
-
-                <article class="card" role="listitem" aria-labelledby="p-hpd">
-                    <a href="https://hpd-computers.ueniweb.com" class="logo-wrap" target="_blank" rel="noopener">
-                    <img class="logo" src="https://via.placeholder.com/240x64.png?text=HPD+Computer+Repair" alt="HPD Computer Repair logo">
-                    </a>
-                    <div>
-                    <div id="p-hpd" class="partner-name">HPD Computer Repair</div>
-                    <div class="partner-desc">Local IT & repair support — great for hardware advice and on-site troubleshooting.</div>
-                    <div class="partner-actions">
-                        <a class="link" href="https://hpd-computers.ueniweb.com" target="_blank" rel="noopener">Visit</a>
-                    </div>
-                    </div>
-                </article>
+                <div class="grid">
+                    <article class="partner-card">
+                        <a href="https://www.facebook.com/groups/oregonconnectedtuners" class="logo-wrap" target="_blank" rel="noopener">
+                            <img class="logo" src="./Resources/oct-logo.jpg" alt="Oregon Connected Tuners logo">
+                        </a>
+                        <div>
+                            <h3 id="p-oregon" class="partner-name">Oregon Connected Tuners</h3>
+                            <p class="partner-desc">Community of performance tuners and event partners for track/tune meetups.</p>
+                            <div class="partner-actions">
+                                <a class="link" href="https://www.facebook.com/groups/oregonconnectedtuners" target="_blank" rel="noopener">Visit</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="partner-card">
+                        <a href="https://www.facebook.com/roseburgcarsandcoffee" class="logo-wrap" target="_blank" rel="noopener">
+                            <img class="logo" src="./Resources/roseburg-cars-and-coffee-logo.jpg" alt="Roseburg Cars & Coffee logo">
+                        </a>
+                        <div>
+                            <h3 id="p-roseburg" class="partner-name">Roseburg Cars & Coffee</h3>
+                            <p class="partner-desc">Local car community meetups — casual morning shows and charity events.</p>
+                            <div class="partner-actions">
+                                <a class="link" href="https://www.facebook.com/roseburgcarsandcoffee" target="_blank" rel="noopener">Visit</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="partner-card">
+                        <a href="https://blperformanceinc.com" class="logo-wrap" target="_blank" rel="noopener">
+                            <img class="logo" src="./Resources/bl-performance-logo.jpg" alt="BL Performance logo">
+                        </a>
+                        <div>
+                            <h3 id="p-bl" class="partner-name">BL Performance</h3>
+                            <p class="partner-desc">Performance shop that provides vehicle support for our track days and tech sessions.</p>
+                            <div class="partner-actions">
+                                <a class="link" href="https://blperformanceinc.com" target="_blank" rel="noopener">Visit</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="partner-card">
+                        <a href="https://www.facebook.com/tabletopkingdom" class="logo-wrap" target="_blank" rel="noopener">
+                            <img class="logo" src="./Resources/tabletop-kingdom-logo.jpg" alt="Tabletop Kingdom logo">
+                        </a>
+                        <div>
+                            <h3 id="p-ttk" class="partner-name">Tabletop Kingdom</h3>
+                            <p class="partner-desc">Local game store — we co-host tabletop and gaming nights at events.</p>
+                            <div class="partner-actions">
+                                <a class="link" href="https://www.facebook.com/tabletopkingdom" target="_blank" rel="noopener">Visit</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="partner-card">
+                        <a href="https://hpd-computers.ueniweb.com" class="logo-wrap" target="_blank" rel="noopener">
+                            <img class="logo" src="./Resources/hpd-computer-repair-logo.jpg" alt="HPD Computer Repair logo">
+                        </a>
+                        <div>
+                            <h3 id="p-hpd" class="partner-name">HPD Computer Repair</h3>
+                            <p class="partner-desc">Local IT & repair support — great for hardware advice and on-site troubleshooting.</p>
+                            <div class="partner-actions">
+                                <a class="link" href="https://hpd-computers.ueniweb.com" target="_blank" rel="noopener">Visit</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </section>
 
-        <!-- CTA -->
-            <section class="cta-panel" aria-labelledby="part-cta">
+            <!--Bottom CTA-->
+            <section class="cta-panel">
                 <div>
-                <h3 id="part-cta">Want to Partner with Us?</h3>
-                <p>We work with local shops, clubs, and creators to run events and cross-promotions. Let's collaborate.</p>
+                    <h3 id="part-cta">Want to Partner with Us?</h3>
+                    <p>We work with local shops, clubs, and creators to run events and cross-promotions. Let's collaborate.</p>
                 </div>
-                <div>
-                <a class="btn" href="/contact">Get in Touch</a>
-                </div>
+                <button type="button" onclick="location.href='/contact'">Get in Touch</button>
             </section>
         </main>
 
