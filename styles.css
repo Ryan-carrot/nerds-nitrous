@@ -14,6 +14,7 @@ body {
     --primary-black: #0f0f0f;
     --primary-white: #ffffff;
     --primary-padding: 2rem;
+    --primary-margin: 2rem;
     --border-radius: 0.625rem;            
     --radius: 0.75rem;
     --gap: 1.25rem;
@@ -248,7 +249,7 @@ button:hover {
 .gallery h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-top: 2rem;
+    margin-top: var(--primary-margin);
 }
 
 .gallery-grid {
@@ -271,14 +272,16 @@ button:hover {
 }
 
 /*Testimonials*/
-.testimonials {
-    background-color: var(--secondary-brand-color);
-    padding: var(--primary-padding);
+.testimonials, .testimonial {
     text-align: center;
 }
 
+.testimonials {
+    background-color: var(--secondary-brand-color);
+    padding: var(--primary-padding);
+}
+
 .testimonial {
-    text-align: center;
     margin-bottom: 1.5rem;
     width: auto;
 }
@@ -316,7 +319,7 @@ button:hover {
     text-align: center;
 }
 
-/*Events*/
+/*Events Home*/
 .events {
     padding: var(--primary-padding);
 }
@@ -400,8 +403,8 @@ button:hover {
 
 .featured-section {
     border-radius: 0.75rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    padding: var(--primary-padding);
+    margin-bottom: var(--primary-margin);
     -webkit-animation: slide-in-left 1s both;
 	animation: slide-in-left 1s both;
 }
@@ -428,22 +431,30 @@ button:hover {
 
 .event-description {
     font-size: 1.125rem;
-    margin-bottom: 2rem;
+    margin-bottom: var(--primary-margin);
+}
+
+.event-list, .event-card {
+    display: flex;
+    gap: var(--gap);
 }
 
 .event-list {
-    display: flex;
     flex-direction: column;
-    gap: 1rem;
+}
+
+.event-card, .event-date {
+    border-radius: var(--border-radius);
 }
 
 .event-card {
-    display: flex;
-    gap: 1rem;
     background: var(--secondary-brand-color);
-    border-radius: 0.5rem;
     padding: 1rem;
     align-items: center;
+}
+
+.event-date, .event-day, .event-info h2 {
+    font-size: 1.25rem;
 }
 
 .event-card:hover {
@@ -453,13 +464,11 @@ button:hover {
 }
 
 .event-date {
-    border-radius: 0.5rem;
     padding: 0.5rem 0.75rem;
     min-width: 70px;
 }
 
 .event-date .event-day {
-    font-size: 1.25rem;
     font-weight: bold;
     display: block;
 }
@@ -472,7 +481,6 @@ button:hover {
 
 .event-info h2 {
     margin: 0 0 0.25rem 0;
-    font-size: 1.25rem;
     color: var(--primary-brand-color);
 }
 
@@ -494,7 +502,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('./Resources/back-cropped.png');
+    background-image: url('./resources/back-cropped.png');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -508,8 +516,7 @@ button:hover {
     text-transform: uppercase;
     width: 100%;
     color: var(--primary-white);
-    background-color: var(--primary-brand-color);
-    opacity: 0.9;
+    background-color: rgba(66, 15, 20, 0.92); /* semi-transparent brand color */
     text-align: center;
     -webkit-animation: slide-in-left 1s both;
     animation: slide-in-left 1s both;
@@ -544,7 +551,7 @@ button:hover {
 }
 
 .mission-vision, .community-values {
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2rem 2rem;
 }
 
 .community-values ul {
@@ -609,7 +616,6 @@ button:hover {
 
 .partners-hero p {
     margin: 0;
-    color: var(--muted);
     font-size: 1rem;
 }
 
@@ -692,14 +698,16 @@ button:hover {
     transform: scale(1.02);
 }
 
+.partner-name, .partner-desc, .link {
+    font-size: 0.9rem;
+}
+
 .partner-name {
     font-weight: 700;
     color: #111;
-    font-size: 0.98rem;
 }
+
 .partner-desc {
-    font-size: 0.9rem;
-    color: var(--muted);
     margin-top: 0.375rem;
 }
 
@@ -712,13 +720,13 @@ button:hover {
 }
 
 .link {
-    font-size: 0.9rem;
     color: var(--primary-brand-color);
     text-decoration: none;
     padding: 0.375rem 0.625rem;
     border-radius: 0.5rem;
     border: 1px solid transparent;
 }
+
 .link:focus,
 .link:hover {
     text-decoration: underline;
@@ -728,7 +736,7 @@ button:hover {
     margin: 2.5rem 0 0 0;
     background: linear-gradient(90deg, rgba(66,15,20,0.06), rgba(0,0,0,0.02));
     padding: 1.375rem;
-    border-radius: 0.75rem;
+    border-radius: var(--radius);
     display: flex;
     gap: 1.125rem;
     align-items: center;
@@ -744,7 +752,10 @@ button:hover {
 }
 
 /* Accessibility: keyboard focus */
-a:focus, button:focus { outline: 3px solid rgba(66,15,20,0.12); outline-offset: 3px; }
+a:focus, button:focus { 
+    outline: 3px solid rgba(66,15,20,0.12); 
+    outline-offset: 3px; 
+}
 
 /*Footer*/
 footer {
@@ -945,6 +956,23 @@ footer a {
     .founder-socials li {
         margin: 0.5rem 0;
     }
+
+    /*Stack partner hero under 696px*/
+    .partners-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .partners-hero .left {
+        flex: none;
+    }
+
+    /*Stack partner section title under 696px*/
+    .section-title {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
 }
 
 /*Stack Partnerships & Passions under 500px*/
@@ -956,7 +984,6 @@ footer a {
 
     .gallery img {
         width: 90%;
-        height: auto;
     }
 
     /*Shrink About H1 and Stack Mission & Values under 500px*/
