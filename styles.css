@@ -502,7 +502,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('./resources/back-cropped.png');
+    background-image: url('./Resources/back-cropped.png');
     background-size: cover;
     background-position: center;
     height: 60vh;
